@@ -1,16 +1,138 @@
-<h1>Roku App Tutorial</h1>
-<p>Step 1: create a new directory by using ``mkdir {application_name}``. Today I will be using ``mkdir rokuapplication``</p><br>
-<p>Step 2: cd into it by using ``cd {application_name}`` </p><br>
-<p>Step 3: download the "hello world" program by using ``wget https://github.com/CalmhostAcct/RokuTutorial/raw/main/hello-world.zip``</p><br>
-<p>Step 4: unzip it by using ``unzip hello-world.zip``</p><br>
-<p>Step 5 (optional): delete it by using ``rm hello-world.zip``</p><br>
-<p>Step 6: edit manifest by typing ``nano manifest``. You can change the app's title, version, icon, etc.</p><br>
-<p>Step 7: edit code by typing ``cd source & nano Main.brs``. You can change the how the app will behave.</p><br>
-<p>Step 8: edit styling code by typing ``cd compenots & nano helloworld.xml``. You can change the how the app will look.</p><br>
-<p>Step 9: download node.js and npm ``sudo apt-get install nodejs npm``. This will help install libraries. </p><br>
-<p>Step 10: install brs ``npm install -g @rokucommunity/brs``. This will run BrightScript code. </p><br>
-<p>Step 11: install brighterscript ``npm install brighterscript -g``. This will compile BrightScript code. </p><br>
-<p>Step 12 (optional): test the code by typing ``cd source & brs Main.brs``. This will compile BrightScript code. </p><br>
-<p>Step 13: compile the code by moving to root channel directory and type ``bsc``. This will compile BrightScript code. </p><br>
 
+# Roku App Tutorial
 
+## Step 1: Create a New Directory
+Create a new directory by using the following command:
+
+```bash
+mkdir {application_name}
+```
+
+For this tutorial, I will use:
+
+```bash
+mkdir rokuapplication
+```
+
+---
+
+## Step 2: Navigate into the Directory
+Change into the new directory with:
+
+```bash
+cd {application_name}
+```
+
+For example:
+
+```bash
+cd rokuapplication
+```
+
+---
+
+## Step 3: Download the "Hello World" Program
+Download the "Hello World" program using:
+
+```bash
+wget https://github.com/CalmhostAcct/RokuTutorial/raw/main/hello-world.zip
+```
+
+---
+
+## Step 4: Unzip the Downloaded File
+Extract the contents of the ZIP file with:
+
+```bash
+unzip hello-world.zip
+```
+
+---
+
+## Step 5 (Optional): Delete the ZIP File
+You can remove the ZIP file after extracting it by using:
+
+```bash
+rm hello-world.zip
+```
+
+---
+
+## Step 6: Edit the Manifest File
+Open the `manifest` file to customize the app's title, version, icon, etc.:
+
+```bash
+nano manifest
+```
+
+---
+
+## Step 7: Edit the Main Code
+Modify how the app behaves by editing the `Main.brs` file:
+
+```bash
+cd source
+nano Main.brs
+```
+
+---
+
+## Step 8: Edit Styling Code
+Change how the app looks by editing the `helloworld.xml` file:
+
+```bash
+cd components
+nano helloworld.xml
+```
+
+**Note:** Ensure the folder is correctly named `components` instead of `compenots`.
+
+---
+
+## Step 9: Install Node.js and npm
+Install Node.js and npm, which are required for libraries, using:
+
+```bash
+sudo apt-get install nodejs npm
+```
+
+---
+
+## Step 10: Install `brs`
+Install `brs`, which runs BrightScript code:
+
+```bash
+npm install -g @rokucommunity/brs
+```
+
+---
+
+## Step 11: Install BrighterScript
+Install `brighterscript`, which compiles BrightScript code:
+
+```bash
+npm install -g brighterscript
+```
+
+---
+
+## Step 12 (Optional): Test the Code
+Run the BrightScript code to test it by using:
+
+```bash
+cd source
+brs Main.brs
+```
+
+---
+
+## Step 13: Compile the Code
+Move to the root directory of your channel and compile the BrightScript code with:
+
+```bash
+bsc
+```
+
+---
+
+That's it! You have now created and compiled your Roku app.
